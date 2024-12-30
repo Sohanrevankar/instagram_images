@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
 
 s3_client = boto3.client('s3', endpoint_url='http://localhost:4566')
-# dynamodb_client = boto3.client('dynamodb', endpoint_url='http://localhost:4566')
+dynamodb_client = boto3.client('dynamodb', endpoint_url='http://localhost:4566')
 
 def lambda_handler(event, context):
     """
